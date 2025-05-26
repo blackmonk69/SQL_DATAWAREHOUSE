@@ -17,7 +17,7 @@ This project involves:
 Note: Regarding naming conventions we decided to use: nameoflayer_sourcesystem_nameoffile
 
 The part where we load the data from the csv into the tables in the bronze Layer is critical, we have to make sure there is a 100% match after performing the bulk insert, which by the way means inserting data in a massive way all at once.
-By referring to a 100%match I mean exact correspondence between name fields and the content of the table.
+By referring to a 100%match I mean exact correspondence between name fields and the content of the table. 
 
 
 
