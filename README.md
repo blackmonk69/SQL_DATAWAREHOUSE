@@ -14,5 +14,11 @@ This project involves:
 3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
 4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
 
+Note: Regarding naming conventions we decided to use: nameoflayer_sourcesystem_nameoffile
+
+The part where we load the data from the csv into the tables in the bronze Layer is critical, we have to make sure there is a 100% match after performing the bulk insert, which by the way means inserting data in a massive way all at once.
+
+
+
 
 
