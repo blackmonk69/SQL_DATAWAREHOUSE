@@ -19,6 +19,13 @@ Note: Regarding naming conventions we decided to use: nameoflayer_sourcesystem_n
 The part where we load the data from the csv into the tables in the bronze Layer is critical, we have to make sure there is a 100% match after performing the bulk insert, which by the way means inserting data in a massive way all at once.
 By referring to a 100%match I mean exact correspondence between name fields and the content of the table. 
 
+Having in mind that this loading task is going to become repetitive, we think it is convenient to write a stored procedure for the injection of data into the tables, this procedure is added some print messages to make the debugging easier for the DBA. There is also a try-catch session. It is also adviseable to keep track of the time each task takes in order to detect bottle necks or any other issues that may arise during execution.
+
+ ## Data flow Diagram
+
+ This diagram is built and included in the documentation in order to help us keep track of the flow of data in the whole operation and also it is useful to help us see where data comes from and where it ends. Also there is the concept of Data Lineage involved in this task.
+
+
 
 
 
