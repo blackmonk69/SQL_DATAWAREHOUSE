@@ -43,15 +43,48 @@ The third approach is to use Python pandas to perform this task. We connect Pand
 ## Data Modeling
 Taking the raw data and organizing it, structiring it in a meaningful way.That is to say we take the tables we have previously uploaded and cleaned and we will build new objects with them. In our case the entities are:
 
-Customers
-Orders
-Products
+* Customers  
+* Orders  
+* Products  
 
-Each of them with a primary key
+Each of them with a primary key.  
+   
 A data model can be approached in 3 different ways:
 
 
 ![image info2](./images/conceptual_dm.png)
+![image info2](./images/logical_dm.png)
+![image info2](./images/physical_dm.png)   
+
+Now regarding traditional data models for reporting we have:   
+
+*Star Schema   
+*Snowflake Schema   (the dimension tables are broken into smaller dimensions)
+
+Both of them are popular these days but they have been present in DB Theories for many many years.
+
+
+![image info2](./images/star_sch.png)   
+![image info2](./images/snowflake_sch.png)
+
+* Dimension Table: It contains data that is descriptive and it gives context to the facts table. E.g. we could have a dimension table for Products or Customers.  
+
+* Facts Table: They are events, like transactions. They contain multiple id's which are the connections to the dimension tables.
+
+## Gold Layer  
+
+Here we identify the business objects based upon the entities we detected in the previous layers.
+
+Products  
+Customer  
+Sales  
+
+Now what we have to do is to join, the 3 tables that contain customer table in order to build only 1 entity or object.
+
+![image info2](./images/select_join_cust.png)   
+
+
+
 
 
 
