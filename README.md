@@ -41,7 +41,7 @@ The third approach is to use Python pandas to perform this task. We connect Pand
 (As a matter of fact in some cases the cleaning and ordering of data can be done with SQL, Pandas or PowerBI).
 
 ## Data Modeling
-Taking the raw data and organizing it, structiring it in a meaningful way.That is to say we take the tables we have previously uploaded and cleaned and we will build new objects with them. In our case the entities are:
+Taking the raw data and organizing it, structuring it in a meaningful way.That is to say we take the tables we have previously uploaded and cleaned and we will build new objects with them. In our case the entities are:
 
 * Customers  
 * Orders  
