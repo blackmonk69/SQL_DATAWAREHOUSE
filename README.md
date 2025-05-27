@@ -25,6 +25,24 @@ Having in mind that this loading task is going to become repetitive, we think it
 
  This diagram is built and included in the documentation in order to help us keep track of the flow of data in the whole operation and also it is useful to help us see where data comes from and where it ends. Also there is the concept of Data Lineage involved in this task.
 
+## Silver Layer
+In this stage we have to make a EDA to find out the relation among the data, key fields, it is a good practice to make a diagram of the entities and their relation, for example, the tables from CRM and the ones from ERP.
+Now in the Silver layer we replicate the tables in the bronze layer but we add some metadata like creation Date.
+Now the primary goal here is to check for duplicates, null values (especially in Primary Keys), extra spaces in string fields. We also care about data normalization, eg. M or F in Gener should be  Male or Female.
+In order to insert the correct data into the silver Table we take or select the right data from the bronze table and execute those selects within an Insert statement. Later on this procedure becomes a stored procedure and we do an Exec statement for this procedure.
+
+A different approach consists of copying the entire dataset into the silver layer and then performing the cleaning and wrangling using an update command on the silver layer tables to make the changes persistent.
+For these complex SQL queries remember if you are not a master in SQL you can always resort to IA to help you build the complex sql query you need.
+
+The third approach is to use Python pandas to perform this task. We connect Pandas to the Server and download the data.
+
+
+
+
+
+
+
+
 
 
 
