@@ -1,4 +1,5 @@
-# SQL_DATAWAREHOUSE
+# SQL_DATAWAREHOUSE  
+###### Based Upon Data With Baraaa's Project - SQL Data Warehouse from Scratch (awesome video). Watch it on Youtube 
 
 ![image info](./images/capturasqlserver.png)
 
@@ -83,6 +84,7 @@ Now what we have to do is to join, the 3 tables that contain customer table in o
 
 ![image info2](./images/select_join_cust.png)   
 
+The Golden Layer is the final stage in this engineering process, once the data are ready to be used in the datawarehouse, it is the data analyst's task to link them to Power Bi for example and build dashboards and draw conclusions.
 
 
 
