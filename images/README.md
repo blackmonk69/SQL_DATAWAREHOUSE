@@ -51,7 +51,7 @@ Each of them with a primary key
 A data model can be approached in 3 different ways:
 
 
-![image info](./images/conceptual_dm.png)
+![image info2](./images/conceptual_dm.png)
 
 
 
