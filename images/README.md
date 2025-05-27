@@ -1,5 +1,7 @@
 # SQL_DATAWAREHOUSE
 
+![image info](./images/capturasqlserver.png)
+
 In this project we build a datawarehouse with the help of some csv files, MSSQL Server, Python. The whole idea is to show an ETL process where the data architecture is organized in layers (bronze, silver and gold) known as Medallion Architecture, and the data after wrangling is injected into a DB in MSSQL Server.
 
 1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
@@ -36,9 +38,20 @@ A different approach consists of copying the entire dataset into the silver laye
 For these complex SQL queries remember if you are not a master in SQL you can always resort to IA to help you build the complex sql query you need.
 
 The third approach is to use Python pandas to perform this task. We connect Pandas to the Server and download the data.
+(As a matter of fact in some cases the cleaning and ordering of data can be done with SQL, Pandas or PowerBI).
+
+## Data Modeling
+Taking the raw data and organizing it, structiring it in a meaningful way.That is to say we take the tables we have previously uploaded and cleaned and we will build new objects with them. In our case the entities are:
+
+Customers
+Orders
+Products
+
+Each of them with a primary key
+A data model can be approached in 3 different ways:
 
 
-
+![image info](./images/conceptual_dm.png)
 
 
 
